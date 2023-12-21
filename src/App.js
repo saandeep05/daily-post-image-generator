@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ImageGenerator from './ImageGenerator';
+import haikei_bg from './assets/blob-scene-haikei.png'
 
 function App() {
+  const appStyles = {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translate(0, -50%)',
+    backgroundImage: haikei_bg
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageGenerator />
     </div>
   );
 }
